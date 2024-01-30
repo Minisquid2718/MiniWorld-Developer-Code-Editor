@@ -37,15 +37,14 @@
             <div class="insert-inner menu-item-inner not-focus-hide en" id="insertInner">
               <div class="insert-inner-top" id="insertInnerTop"><i class="close-icon"></i></div>
               <div class="insert-inner-content">
-                <!--父菜单-->
                 <ul class="insert-list parent">
                   <li class="insert-item" data-insert-type="variable">Create variable</li>
                   <li class="insert-item" data-insert-type="func">Create Function</li>
                   <li class="insert-item" data-insert-type="assert">Create process statement</li>
                   <li class="insert-item" data-insert-type="loop">Create loop statement</li>
                   <li class="insert-item" data-insert-type="table">Create table</li>
+				  <li class="insert-item" data-insert-type="example">Example</li>
                 </ul>
-                <!--子菜单-->
                 <ul class="insert-list child" data-parent-type="variable" style="display: none;">
                   <li class="insert-item" data-insert-type="variable-global">Global variable</li>
                   <li class="insert-item" data-insert-type="variable-local">Local variable</li>
@@ -67,6 +66,9 @@
                 <ul class="insert-list child" data-parent-type="table" style="display: none;">
                   <li class="insert-item" data-insert-type="table-global">Global table</li>
                   <li class="insert-item" data-insert-type="table-local">Local table</li>
+                </ul>
+				<ul class="insert-list child" data-parent-type="example" style="display: none;">
+                  <li class="insert-item" data-insert-type="ex1">Player's value</li>
                 </ul>
               </div>
             </div>
@@ -109,6 +111,7 @@
                 </button>
                 <div class="modal" id="infoModal">
                 <img src="cre.jpg" alt="Credits" />
+                <button onclick="myFunction()">Nhấn vào đây</button>
               </ul>
             </div>
           </div>
@@ -147,6 +150,15 @@
   <script src="./datapack.js"></script>
   <script src="./insertCodeConfig.js"></script>
   <script type="text/javascript" src="./app.js"></script>
+  <script>
+function myFunction() {
+  var x = document.createElement("DIV");
+  x.style.width = "20px";
+  x.style.height = "20px";
+  x.style.background = "red";
+  document.getElementById("demo").appendChild(x);
+}
+</script>
 </body>
 
 </html>
