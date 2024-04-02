@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>MiniWorld - DevCodeEditor</title>
   <link href="./app.css" rel="stylesheet">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v19.0" nonce="PLHWTk67"></script>
 </head>
 
 <body>
@@ -111,7 +113,16 @@
                 </button>
                 <div class="modal" id="infoModal">
                 <img src="cre.jpg" alt="Credits" />
-                <--!button onclick="myFunction()">Nhấn vào đây</button-->
+              </ul>
+            </div>
+          </div>
+        </li>
+	<li class="menu-item">
+          <div class="Comment-wrapper menu-item-wrapper" id="CommentWrapper">
+            <button class="Comment-btn menu-item-btn" id="idComment">Community</button>
+            <div class="Comment-inner menu-item-inner" id="CommentInner">
+              <ul class="Comment-list">
+                <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#MiniWorldDeveloperCodeEditor" data-width="300" data-numposts="2"></div>
               </ul>
             </div>
           </div>
