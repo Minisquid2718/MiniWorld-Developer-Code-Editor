@@ -173,8 +173,8 @@ ul {
 .idlib-item:last-child {
   border-bottom: none;
 }
-.Comment-item.current,
-.Comment-item:hover {
+.idlib-item.current,
+.idlib-item:hover {
   background-color: #ddd;
 }
 .Comment-item {
