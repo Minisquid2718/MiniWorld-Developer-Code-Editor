@@ -17,6 +17,7 @@ const insertCodeConfig = {
     'table-global': `a = {}${lineBreak}`,
     'table-local': `local a = {}${lineBreak}`,
 	'ex1': `local_var = {}${twoLineBreak}function addvar(eventobjid5)${lineBreak}    for i_, v_ in ipairs(local_var) do${lineBreak}        if (v_[1] ~= eventobjid5.eventobjid) and i_ == #local_var then${lineBreak}            table.insert(local_var, #local_var + 1, {eventobjid5.eventobjid,[[Put player's variable here]]'})${lineBreak}        end${lineBreak}        if (v_[1] == eventobjid5.eventobjid) then${lineBreak}            break${lineBreak}        end${lineBreak}    end${lineBreak}end${lineBreak}ScriptSupportEvent:registerEvent([=[Game.AnyPlayer.EnterGame]=],addvar)`,
+	'ex2': `var = {${lineBreak}    getG = function(typeVal,name)${lineBreak}        local result,value = VarLib2:getGlobalVarByName(typeVal,name)${lineBreak}        return value${lineBreak}    end,${lineBreak}    get = function(obj,typeVal,name)${lineBreak}        local result,value = VarLib2:getPlayerVarByName(obj,typeVal,name)${lineBreak}        return value${lineBreak}    end,${lineBreak}    setG = function(typeVal,name,val)${lineBreak}        return VarLib2:setGlobalVarByName(typeVal,name,val)${lineBreak}    end,${lineBreak}    set = function(obj,typeVal,name,val)${lineBreak}        return VarLib2:setPlayerVarByName(obj,typeVal,name,val)${lineBreak}    end${lineBreak}}${lineBreak}`
 };
 
 window.insertCodeConfig = insertCodeConfig;
